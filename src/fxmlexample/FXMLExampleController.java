@@ -5,19 +5,15 @@
  */
 package fxmlexample;
 
-import java.net.URL;
-import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
 import javafx.scene.text.Text;
 
 /**
  *
  * @author adam
  */
-public class FXMLExampleController implements Initializable {
+public class FXMLExampleController {
     
     @FXML
     private Text actiontarget;
@@ -26,10 +22,4 @@ public class FXMLExampleController implements Initializable {
     private void handleSubmitButtonAction(ActionEvent event) {
         actiontarget.setText("Sign in button pressed");
     }
-    
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
-    
 }
